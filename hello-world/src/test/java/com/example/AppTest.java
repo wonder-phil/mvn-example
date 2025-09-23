@@ -17,4 +17,18 @@ public class AppTest
     {
         assertTrue( true );
     }
+
+    @Test
+    public void MallartDuckIsADuck()
+    {
+        Duck mallard = new MallardDuck();
+        assertTrue( mallard instanceof Duck );
+    }
+
+    @Test
+    public void MallartDuckIsATurley()
+    {
+        Duck mallard = new MallardDuck();
+        assertTrue( mallard instanceof Turkey );
+    }
 }
